@@ -10,11 +10,12 @@ export default function Contact() {
       ref={ref}
       aria-labelledby="contact-heading"
     >
-      <p className="eyebrow">Contact</p>
-      <h2 id="contact-heading">Let’s build the next campaign.</h2>
+      <p className="eyebrow">Let’s work</p>
+      <h2 id="contact-heading">Let’s build brands people want to follow.</h2>
       <p className="lede">
-        Open to social media management, digital marketing projects, and brand
-        collaborations across industries.
+        I bring thoughtful content planning, practical account management, and
+        structured marketing strategy so brands communicate clearly and connect
+        with their audiences—across industries.
       </p>
       <div className="contact__links">
         <a href="mailto:olarewajuolamide524@gmail.com">olarewajuolamide524@gmail.com</a>
@@ -26,8 +27,25 @@ export default function Contact() {
         >
           linkedin.com/in/olamideolarewaju
         </a>
-        <p className="contact__place">Lagos, Nigeria</p>
       </div>
+      <div className="contact__accounts">
+        <p className="contact__accounts-label">Selected accounts</p>
+        <a
+          href="http://www.tiktok.com/@doctor_x01"
+          target="_blank"
+          rel="noreferrer"
+        >
+          TikTok · @doctor_x01
+        </a>
+        <a
+          href="https://www.tiktok.com/@shyneluxxie"
+          target="_blank"
+          rel="noreferrer"
+        >
+          TikTok · @shyneluxxie
+        </a>
+      </div>
+      <p className="contact__place">Lagos, Nigeria</p>
     </section>
   )
 }

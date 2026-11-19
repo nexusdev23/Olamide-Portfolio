@@ -2,16 +2,16 @@ import { useInView } from '../hooks/useInView'
 
 const pillars = [
   {
-    title: 'Content systems',
-    text: 'Consistent Instagram & TikTok calendars, visual identity, and lifecycle posting that keep brands present without guesswork.',
+    title: 'Account management',
+    text: 'TikTok planning, publishing, captions, and hashtag research that keep pages consistent and discoverable.',
   },
   {
-    title: 'Go-to-market clarity',
-    text: 'Personas, positioning, UVPs, and channel maps so every campaign answers a real customer tension.',
+    title: 'Campaign strategy',
+    text: 'Positioning, channel maps, launch sequences, and measurement frameworks—from teaser to retention.',
   },
   {
-    title: 'Lead & retention loops',
-    text: 'Lead magnets, email nurture, segmentation, and retargeting that turn attention into buyers—and buyers into advocates.',
+    title: 'Journeys that convert',
+    text: 'Audience segmentation, lead capture, email nurture, and retargeting so attention becomes customers.',
   },
 ]
 
@@ -29,9 +29,8 @@ export default function Approach() {
         <p className="eyebrow">Approach</p>
         <h2 id="approach-heading">How I work with brands</h2>
         <p className="lede">
-          Research-backed storytelling, platform-native creative, and measured
-          iteration—built to sell clarity, convenience, and confidence for
-          whatever the brand sells.
+          Platform-native creative, clear messaging, and structured strategy—built
+          for health, retail, beauty, and whatever the next brief is.
         </p>
       </div>
       <ul className="approach__list">

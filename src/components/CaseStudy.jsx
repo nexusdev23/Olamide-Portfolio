@@ -3,6 +3,8 @@ import { useInView } from '../hooks/useInView'
 export default function CaseStudy({ project, index }) {
   const { ref, inView } = useInView()
   const odd = index % 2 === 1
+  const hasGallery = project.gallery?.length > 0
+  const hasMetrics = project.metrics?.items?.length > 0
 
   return (
     <article
@@ -19,6 +21,34 @@ export default function CaseStudy({ project, index }) {
           <p className="case__tagline">{project.tagline}</p>
         </div>
       </header>
+
+      {hasGallery && (
+        <div className="case__gallery" aria-label={`${project.title} visuals`}>
+          {project.gallery.map((shot) => (
+            <figure key={shot.src} className="case__shot">
+              <img src={shot.src} alt={shot.alt} loading="lazy" />
+            </figure>
+          ))}
+        </div>
+      )}
+
+      {hasMetrics && (
+        <div className="case__metrics">
+          <p className="case__metrics-period">{project.metrics.period}</p>
+          <dl className="case__metrics-row">
+            {project.metrics.items.map((m) => (
+              <div key={m.label} className="case__metric">
+                <dt>{m.value}</dt>
+                <dd>{m.label}</dd>
+              </div>
+            ))}
+          </dl>
+          {project.metrics.extras && (
+            <p className="case__metrics-extra">{project.metrics.extras}</p>
+          )}
+          <p className="case__metrics-disclaimer">{project.metrics.disclaimer}</p>
+        </div>
+      )}
 
       <div className="case__story">
         <div className="case__block">
@@ -50,7 +80,17 @@ export default function CaseStudy({ project, index }) {
             <li key={item}>{item}</li>
           ))}
         </ul>
-        <p className="case__note">{project.note}</p>
+        {project.note && <p className="case__note">{project.note}</p>}
+        {project.link && (
+          <a
+            className="case__link"
+            href={project.link.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {project.link.label}
+          </a>
+        )}
       </div>
     </article>
   )

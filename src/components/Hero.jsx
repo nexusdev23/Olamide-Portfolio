@@ -26,9 +26,9 @@ export default function Hero() {
           Social strategy that helps any brand grow with clarity.
         </h1>
         <p className="hero__support">
-          Social Media Manager &amp; Digital Marketer in Lagos—building content
-          systems, go-to-market plans, and lifecycle journeys for brands across
-          categories.
+          Social Media Manager &amp; Digital Marketer in Lagos—TikTok account
+          management, content strategy, and go-to-market plans for brands across
+          health, retail, beauty, and beyond.
         </p>
         <div className="hero__actions">
           <a className="btn btn--primary" href="#work">

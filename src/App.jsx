@@ -5,7 +5,7 @@ import CaseStudy from './components/CaseStudy'
 import Approach from './components/Approach'
 import Contact from './components/Contact'
 import Nav from './components/Nav'
-import { clawClipCase, mideyCase } from './data/projects'
+import { selectedWork } from './data/projects'
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -27,14 +27,17 @@ export default function App() {
         <section className="work" id="work" aria-labelledby="work-heading">
           <div className="section-intro reveal">
             <p className="eyebrow">Selected work</p>
-            <h2 id="work-heading">Selected case studies</h2>
+            <h2 id="work-heading">Work that wins attention—and trust</h2>
             <p className="lede">
-              Strategy, messaging, and channel systems from recent work—including
-              beauty brand GTM and full-funnel marketing plans.
+              Practical TikTok management, content strategy, and digital
+              marketing projects across health education, fragrance retail, and
+              beauty product launches. Beauty shows up as case studies—not a
+              niche limit.
             </p>
           </div>
-          <CaseStudy project={clawClipCase} index={1} />
-          <CaseStudy project={mideyCase} index={2} />
+          {selectedWork.map((project, i) => (
+            <CaseStudy key={project.id} project={project} index={i + 1} />
+          ))}
         </section>
         <Approach />
         <Contact />

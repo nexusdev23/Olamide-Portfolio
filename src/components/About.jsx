@@ -12,30 +12,30 @@ export default function About() {
     >
       <div className="about__grid">
         <div>
-          <p className="eyebrow">About</p>
+          <p className="eyebrow">Profile</p>
           <h2 id="about-heading">
-            Detail-minded marketer who turns brand friction into clear stories.
+            A practical, audience-aware approach to digital content.
           </h2>
         </div>
         <div className="about__body">
           <p>
-            I’m Olamide—a Product &amp; Social Media Marketer with hands-on
-            experience shaping Instagram and TikTok content strategy. I plan,
-            create, schedule, and read the metrics so messaging stays consistent
-            and audiences actually engage—for brands in any category.
+            I’m Olamide Olarewaju—a social media and digital marketing
+            practitioner with hands-on experience managing TikTok content for
+            brands in different niches, alongside marketing plans and
+            go-to-market strategies.
           </p>
           <p>
-            My work sits at the intersection of product marketing and social:
-            personas, positioning, channel plans, creative concepts, and nurture
-            systems that move people from “I saw it” to “I bought it”—and back
-            again. Recent case studies happen to be in beauty; the same process
-            travels with the brief.
+            My work brings together content planning, clear messaging,
+            platform-aware copywriting, and performance review. I translate
+            brand goals into useful content and campaigns that speak to the
+            right audience—whether the brief is health education, fragrance
+            retail, or product launch.
           </p>
-          <ul className="about__creds">
-            <li>Product &amp; Social Media Marketer — Shyne Luxxie &amp; Stelz Accessories</li>
-            <li>Social Media Marketing — TS Academy</li>
-            <li>Virtual Assistant Programme — ALX Africa</li>
-            <li>CRM · Project Management · Soft Skills certifications</li>
+          <ul className="about__creds" aria-label="Core capabilities">
+            <li>Social media management — planning, publishing, page consistency</li>
+            <li>Content &amp; copywriting — captions, hooks, CTAs, hashtag research</li>
+            <li>Digital marketing — segmentation, lead generation, customer journeys</li>
+            <li>Campaign strategy — positioning, channel planning, launch KPIs</li>
           </ul>
         </div>
       </div>
