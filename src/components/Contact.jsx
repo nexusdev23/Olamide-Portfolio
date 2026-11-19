@@ -38,11 +38,11 @@ export default function Contact() {
           TikTok · @doctor_x01
         </a>
         <a
-          href="https://www.tiktok.com/@shyneluxxie"
+          href="https://www.tiktok.com/@shyneluxxieperfumes"
           target="_blank"
           rel="noreferrer"
         >
-          TikTok · @shyneluxxie
+          TikTok · @shyneluxxieperfumes
         </a>
       </div>
       <p className="contact__place">Lagos, Nigeria</p>

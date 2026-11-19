@@ -123,8 +123,8 @@ export const shyneCase = {
     },
   ],
   link: {
-    href: 'https://www.tiktok.com/@shyneluxxie',
-    label: 'View @shyneluxxie on TikTok',
+    href: 'https://www.tiktok.com/@shyneluxxieperfumes',
+    label: 'View @shyneluxxieperfumes on TikTok',
   },
   note: 'Examples: fragrance product promotion and December sales awareness content.',
 }
