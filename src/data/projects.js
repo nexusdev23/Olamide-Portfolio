@@ -119,7 +119,7 @@ export const shyneCase = {
     },
     {
       src: '/work/shyne-analytics.webp',
-      alt: 'Shyne Luxxie TikTok analytics overview screenshot',
+      alt: 'Shyne Luxxie TikTok LIVE analytics — 59.7K total viewers, 44.5K new viewers, 71% female audience',
     },
   ],
   link: {
